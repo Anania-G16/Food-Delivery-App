@@ -32,16 +32,17 @@ const MyOrders = () => {
                 {order.items.map((item, index) => {
                   if (index === order.items.length - 1) {
                     return item.name + " x " + item.quantity;
-                }
-                else{
+                  } else {
                     return item.name + " x " + item.quantity + ",";
-                }
+                  }
                 })}
               </p>
               <p>${order.amount}.00</p>
               <p>Items: {order.items.length}</p>
-              <p><span>&#x25cf;</span> <b>{order.status}</b></p>
-              <button>Track Order</button>
+              <p>
+                <span>&#x25cf;</span> <b>{order.status}</b>
+              </p>
+              <button onClick={fetchOrders}>Track Order</button>
             </div>
           );
         })}
