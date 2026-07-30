@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server started on http://localhost:${port}`);
+  console.log(`Server started on port ${port}`);
 });
 
 //mongodb+srv://ananiagirma42_db_user:<db_password>@cluster0.5zszym8.mongodb.net/?
